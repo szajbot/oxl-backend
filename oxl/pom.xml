@@ -12,7 +12,7 @@
 	<artifactId>oxl</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>oxl</name>
-	<description>Oxl appliaction as laboratory project</description>
+	<description>Oxl application as laboratory project</description>
 	<properties>
 		<java.version>19</java.version>
 	</properties>
