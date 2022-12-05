@@ -18,6 +18,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="0ee90f1a-736e-4e47-8e5e-677801811abd" />
+        <option name="url" value="https://github.com/szajbot/oxl-backend" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -52,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670227615425</updated>
-      <workItem from="1670227616829" duration="1785000" />
+      <workItem from="1670227616829" duration="3296000" />
     </task>
     <servers />
   </component>
