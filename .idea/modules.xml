@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/oxl/oxl.iml" filepath="$PROJECT_DIR$/oxl/oxl.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/oxl-backend.iml" filepath="$PROJECT_DIR$/.idea/oxl-backend.iml" />
     </modules>
   </component>

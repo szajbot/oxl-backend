@@ -1,0 +1,38 @@
+version: '3'
+
+x-postgres-service: &postgres-environments
+  POSTGRES_DB: keycloak
+  POSTGRES_USER: keycloak
+  POSTGRES_PASSWORD: password
+
+x-keycloak-service: &keycloak-environments
+  DB_VENDOR: POSTGRES
+  DB_ADDR: postgres
+  DB_DATABASE: keycloak
+  DB_USER: keycloak
+  DB_PASSWORD: password
+  KEYCLOAK_USER: admin
+  KEYCLOAK_PASSWORD: Pa55w0rd
+
+volumes:
+  postgres_data:
+    driver: local
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres.oxl
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      <<: *postgres-environments
+  keycloak:
+    image: quay.io/keycloak/keycloak:legacy
+    container_name: keycloak.oxl
+    environment:
+      <<: *keycloak-environments
+    ports:
+      - 8080:8080
+      - 8443:8443
+    depends_on:
+      - postgres
